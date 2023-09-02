@@ -165,19 +165,18 @@ a:visited {
     padding-left: 1%;
 }
 
-
+/* Media query para tamaños de pantalla de 600px a 768px */
 @media (min-width: 600px) and (max-width: 768px) {
+    /* Estilos para esta franja de tamaño de pantalla */
+  
+    /* Ejemplo: Cambiar el fondo del cuerpo */
     body {
-      background-color: #de3163;
+      background-color: lightgray;
     }
-
-
-    .menu {
-        display: flex;
-        justify-content: left ;
-        align-content: center;
+  
+    /* Ejemplo: Alinear el texto al centro */
+    .mi-elemento {
+      text-align: center;
     }
-
-
-
   }
+  
