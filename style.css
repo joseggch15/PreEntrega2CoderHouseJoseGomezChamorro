@@ -14,14 +14,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 .foto-perfil {
     border-radius: 50%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 } 
-
 
 .menu {
     display: flex;
@@ -191,7 +189,26 @@ a:visited {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        transform: translateY(-70%);
     }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .menu .menu-opcion {
+        margin-left: 1%;
+        list-style: none;
+        text-decoration: none;
+        padding-top: 2%;
+    }
+    
+
+
+
 }
 
 
