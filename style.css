@@ -102,9 +102,6 @@ a:visited {
 
 .imagenen-logo-estudios{
     display: flex;
-  
-    
-   
 }
 
 
@@ -200,7 +197,12 @@ a:visited {
         text-decoration: none;
         padding-top: 2%;
     }
- 
+
+    .imagenen-logo-estudios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
     .titulo-mis-experiencias-profesionales{
         position: relative;
         transform: translateX(20%);
