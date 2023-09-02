@@ -171,12 +171,34 @@ a:visited {
   
     /* Ejemplo: Cambiar el fondo del cuerpo */
     body {
-      background-color: lightgray;
+      background-color:red;
     }
   
-    /* Ejemplo: Alinear el texto al centro */
-    .mi-elemento {
-      text-align: center;
-    }
-  }
   
+ 
+
+    .info-basica {
+        color: blue;
+        text-align: justify;
+        width: 95%;
+        padding: 1%;
+        
+    }
+
+    .info-basica p::first-line {
+    
+        font-weight: bold;
+      
+        color: cadetblue;
+    }
+
+    .foto-perfil {
+        border-radius: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
+}
