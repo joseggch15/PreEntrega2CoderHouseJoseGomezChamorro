@@ -17,9 +17,10 @@ body {
 
 .foto-perfil {
     border-radius: 50%;
-    left: 50%; 
-    transform: translate(325%, 0%); 
-}
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+} 
 
 
 .menu {
@@ -173,22 +174,15 @@ a:visited {
     body {
       background-color:red;
     }
-  
-  
- 
-
     .info-basica {
         color: blue;
         text-align: justify;
         width: 95%;
         padding: 1%;
-        
     }
 
     .info-basica p::first-line {
-    
         font-weight: bold;
-      
         color: cadetblue;
     }
 
@@ -198,7 +192,29 @@ a:visited {
         left: 50%;
         transform: translateX(-50%);
     }
+}
 
 
 
+
+/* Media query para tabletas en modo horizontal (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .foto-perfil {
+        border-radius: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+
+    .info-basica {
+        color: cornflowerblue;
+        text-align: justify;
+        width: 95%;
+        padding: 1%;
+    }
+
+    .info-basica p::first-line {
+        font-weight: bold;
+        color: chocolate;
+    }
 }
