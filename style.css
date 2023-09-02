@@ -107,12 +107,6 @@ a:visited {
     flex-wrap: wrap;
 }
 
-.universidad{
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    size: 100%;
-}
 
 
 .imagenen-logo-github{
@@ -169,14 +163,15 @@ a:visited {
     /* Estilos para esta franja de tamaño de pantalla */
   
     /* Ejemplo: Cambiar el fondo del cuerpo */
-    body {
-      background-color:red;
-    }
+   
     .info-basica {
         color: blue;
         text-align: justify;
         width: 95%;
         padding: 1%;
+        position: relative;
+        transform: translateY(-40%); 
+
     }
 
     .info-basica p::first-line {
@@ -205,10 +200,13 @@ a:visited {
         text-decoration: none;
         padding-top: 2%;
     }
-    
-
-
-
+ 
+    .titulo-mis-experiencias-profesionales{
+        position: relative;
+        transform: translateX(20%);
+        transform: translateY(-80%); 
+        left: 50%;
+    }
 }
 
 
