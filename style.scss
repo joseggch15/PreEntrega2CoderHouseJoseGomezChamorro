@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
   background-image: url("img/pexels-tranmautritam-245032.jpg");
   background-size: cover;
@@ -20,15 +21,17 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-}
-.menu .menu-opcion {
-  margin-left: 1%;
-  list-style: none;
-  text-decoration: none;
-}
-.menu .menu-opcion a {
-  text-decoration: none;
-  color: none;
+
+  .menu-opcion {
+    margin-left: 1%;
+    list-style: none;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+      color: none;
+    }
+  }
 }
 
 a:visited {
@@ -39,10 +42,11 @@ a:visited {
   text-align: justify;
   width: 95%;
   padding: 1%;
-}
-.info-basica p::first-line {
-  font-weight: bold;
-  color: rgba(14, 128, 221, 0.834);
+
+  p::first-line {
+    font-weight: bold;
+    color: rgba(14, 128, 221, 0.834);
+  }
 }
 
 .pie-pagina {
@@ -56,17 +60,19 @@ a:visited {
   width: 100%;
   background-color: #f0f0f0;
   padding: 1%;
-}
-.pie-pagina .info-pie-pagina {
-  text-decoration: none;
-  color: none;
-  text-align: space;
-  margin-left: 1%;
-  margin-top: 10px;
-}
-.pie-pagina .info-pie-pagina a {
-  text-decoration: none;
-  color: none;
+
+  .info-pie-pagina {
+    text-decoration: none;
+    color: none;
+    text-align: space;
+    margin-left: 1%;
+    margin-top: 10px;
+
+    a {
+      text-decoration: none;
+      color: none;
+    }
+  }
 }
 
 .imagenen-logo-corporativo {
@@ -74,24 +80,23 @@ a:visited {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-.imagenen-logo-corporativo .empresas {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+
+  .empresas {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
 }
 
 .imagenen-logo-estudios {
   display: flex;
-}
-@media (min-width: 600px) and (max-width: 768px) {
-  .imagenen-logo-estudios {
+
+  @media (min-width: 600px) and (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .imagenen-logo-estudios {
+
+  @media (min-width: 768px) and (max-width: 1024px) {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -118,21 +123,21 @@ a:visited {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-.imagenen-logo-github .github {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  size: 100%;
-}
-.imagenen-logo-github .github-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  text-decoration: none;
-  position: relative;
-  transform: translateX(45%);
+
+  .github {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    size: 100%;
+  }
+
+  .github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    text-decoration: none;
+  }
 }
 
 .imagen-freetime {
@@ -140,22 +145,25 @@ a:visited {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-.imagen-freetime .freetime-actividad {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  size: 100%;
-}
-.imagen-freetime .hobbie-texto {
-  text-align: justify;
-  width: 95%;
-  padding-left: 1%;
-}
-.imagen-freetime .experiencia-texto {
-  text-align: justify;
-  width: 95%;
-  padding-left: 1%;
+
+  .freetime-actividad {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    size: 100%;
+  }
+
+  .hobbie-texto {
+    text-align: justify;
+    width: 95%;
+    padding-left: 1%;
+  }
+
+  .experiencia-texto {
+    text-align: justify;
+    width: 95%;
+    padding-left: 1%;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
@@ -166,19 +174,20 @@ a:visited {
     padding: 1%;
     position: relative;
     transform: translateY(-40%);
+
+    p::first-line {
+      font-weight: bold;
+      color: cadetblue;
+    }
   }
-  .info-basica p::first-line {
-    font-weight: bold;
-    color: cadetblue;
-  }
+
   .foto-perfil {
     transform: translateX(-50%);
     transform: translateY(-70%);
   }
+
   .menu {
     flex-direction: column;
     padding-top: 2%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
