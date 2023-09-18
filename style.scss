@@ -108,6 +108,12 @@ a:visited {
   transform: translateX(40%);
 }
 
+.experiencia-texto {
+  text-align: justify;
+  width: 95%;
+  padding-left: 1%;
+}
+
 .Mis-Titulos-Obtenidos {
   position: relative;
   transform: translateX(40%);
@@ -141,30 +147,24 @@ a:visited {
 }
 
 .imagen-freetime {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-  .freetime-actividad {
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    size: 100%;
-  }
+    .freetime-actividad {
+        width: calc(25% - 20px); /* Establece el ancho en un 25% del contenedor y resta un margen */
+        height: auto; /* Mantiene la relación de aspecto original */
+        margin: 10px;
+    }
 
-  .hobbie-texto {
-    text-align: justify;
-    width: 95%;
-    padding-left: 1%;
-  }
-
-  .experiencia-texto {
-    text-align: justify;
-    width: 95%;
-    padding-left: 1%;
-  }
+    .hobbie-texto {
+        text-align: justify;
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding-left: 1%;
+    }
 }
+
 
 @media (min-width: 600px) and (max-width: 768px) {
   .info-basica {
