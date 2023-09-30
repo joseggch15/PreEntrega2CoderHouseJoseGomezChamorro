@@ -1,0 +1,14 @@
+// se da bloques de codigo para luego ser reutilizado en style sass y compactar el codigo
+
+
+@mixin body-style {
+  background-image: url("../img/pexels-tranmautritam-245032.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
