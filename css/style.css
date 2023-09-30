@@ -126,11 +126,22 @@ a:visited {
   align-items: center;
   flex-wrap: wrap;
 }
-.imagenen-logo-github .github {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  size: 100%;
+@media (min-width: 500px) and (max-width: 778px) {
+  .imagenen-logo-github {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenen-logo-github .github {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    size: 100%;
+  }
+  .imagenen-logo-github .github-link {
+    text-align: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
 }
 .imagenen-logo-github .imagenen-logo-github {
   text-align: center; /* Centrar horizontalmente */
@@ -152,13 +163,26 @@ a:visited {
   flex-wrap: wrap;
 }
 .imagenen-freetime .freetime-actividad {
-  width: calc(25% - 25px); /* Establece el ancho en un 25% del contenedor y resta un margen */
+  width: 23%; /* Establece el ancho en un 25% del contenedor y resta un margen */
   height: 200px; /* Mantiene la relación de aspecto original */
   margin: 10px;
+}
+@media (min-width: 500px) and (max-width: 778px) {
+  .imagenen-freetime {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .imagenen-freetime .freetime-actividad {
+    width: 23%; /* Establece el ancho en un 25% del contenedor y resta un margen */
+    height: 80%; /* Mantiene la relación de aspecto original */
+    margin: 10px;
+  }
 }
 .imagenen-freetime .hobbie-texto {
   text-align: justify;
   width: 100%; /* Ocupa todo el ancho disponible */
+  height: auto;
   padding-left: 1%;
 }
 

@@ -129,12 +129,27 @@
   align-items: center;
   flex-wrap: wrap;
 
-  .github {
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    size: 100%;
+  
+
+  @media (min-width: 500px) and (max-width: 778px) {
+    display: flex;
+    flex-direction: column;
+    .github {
+      width: 300px;
+      height: 200px;
+      margin: 10px;
+      size: 100%;
+    }
+    .github-link {
+
+      text-align: center; /* Centrar horizontalmente */
+      justify-content: center; /* Centrar verticalmente */
+      align-items: center; /* Centrar verticalmente */
+    }
   }
+
+
+
 
   .imagenen-logo-github {
     text-align: center; /* Centrar horizontalmente */
@@ -157,23 +172,40 @@
     align-items: center;
     flex-wrap: wrap;
 
-    
   }
 
   .freetime-actividad {
     width: calc(
-      25% - 25px
+      24% - 1%
     ); /* Establece el ancho en un 25% del contenedor y resta un margen */
     height: 200px; /* Mantiene la relación de aspecto original */
     margin: 10px;
   }
 
+  @media (min-width: 500px) and (max-width: 778px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    .freetime-actividad {
+      width: calc(
+        24% - 1%
+      ); /* Establece el ancho en un 25% del contenedor y resta un margen */
+      height: 80%; /* Mantiene la relación de aspecto original */
+      margin: 10px;
+    }
+  }
+
+
+
   .hobbie-texto {
     text-align: justify;
     width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto;
     padding-left: 1%;
   }
 }
+
+
 
 @mixin properties-responsives-600-to-768 {
   .info-basica {
