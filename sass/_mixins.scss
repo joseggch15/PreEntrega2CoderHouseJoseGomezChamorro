@@ -1,6 +1,5 @@
 // se da bloques de codigo para luego ser reutilizado en style sass y compactar el codigo
 
-
 @mixin body-style {
   background-image: url("../img/pexels-tranmautritam-245032.jpg");
   background-size: cover;
@@ -11,4 +10,67 @@
   font-family: "Roboto", sans-serif;
 }
 
+@mixin foto-perfil-properties {
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+@mixin menu-properties {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .menu-opcion {
+    margin-left: 1%;
+    list-style: none;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+      color: none;
+    }
+  }
+}
+@mixin link-visited-properties {
+  color: $black-color;
+}
+
+@mixin info-basica-properties {
+  text-align: justify;
+  width: 95%;
+  padding: 1%;
+
+  p::first-line {
+    font-weight: bold;
+    color: $firstline-color;
+  }
+}
+
+
+@mixin pie-pagina-properties {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-color-piepagina;
+    padding: 1%;
+  
+    .info-pie-pagina {
+      text-decoration: none;
+      color: none;
+      text-align: space;
+      margin-left: 1%;
+      margin-top: 10px;
+  
+      a {
+        text-decoration: none;
+        color: none;
+      }
+    }
+}
