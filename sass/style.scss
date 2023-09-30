@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import 'variables'; // Importa el archivo variables.scss
-@import 'mixins'; // Importa el archivo mixins.scss
+@import "variables"; // Importa el archivo variables.scss
+@import "mixins"; // Importa el archivo mixins.scss
 
 body {
   @include body-style; // se importa desde la estructura desde mixins
 }
 
 .foto-perfil {
- @include foto-perfil-properties; // se importa la esctura de mixins las propiedades que tomara la foto
+  @include foto-perfil-properties; // se importa la esctura de mixins las propiedades que tomara la foto
 }
 
 .menu {
-  @include  menu-properties ; // se importa la esctura de mixins las propiedades que toma el menu
+  @include menu-properties; // se importa la esctura de mixins las propiedades que toma el menu
 }
 
 a:visited {
@@ -20,126 +20,44 @@ a:visited {
 
 .info-basica {
   @include info-basica-properties; // se importa propiedades
-
 }
 
 .pie-pagina {
- @include pie-pagina-properties; // se importa propiedades
+  @include pie-pagina-properties; // se importa propiedades
 }
 
 .imagenen-logo-corporativo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-  .empresas {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-  }
+  @include imagenen-logo-corporativo-properties; // se importa propiedades
 }
 
 .imagenen-logo-estudios {
-  display: flex;
-
-  @media (min-width: 600px) and (max-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-  }
+  @include imagenen-logo-estudios-properties;
 }
 
 .titulo-mis-experiencias-profesionales {
-  position: relative;
-  transform: translateX(40%);
+  @include titulo-mis-experiencias-profesionales-properties;
 }
 
 .experiencia-texto {
-  text-align: justify;
-  width: 95%;
-  padding-left: 1%;
+  @include experiencia-texto-properties;
 }
 
 .Mis-Titulos-Obtenidos {
-  position: relative;
-  transform: translateX(40%);
+  @include Mis-Titulos-Obtenidos-properties;
 }
 
 .Titulo-Evidencias {
-  position: relative;
-  transform: translateX(45%);
+  @include Titulo-Evidencias-properties;
 }
 
 .imagenen-logo-github {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-  .github {
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    size: 100%;
-  }
-
-  .github-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    text-decoration: none;
-  }
+  @include imagenen-logo-github-properties;
 }
 
 .imagen-freetime {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    .freetime-actividad {
-        width: calc(25% - 20px); /* Establece el ancho en un 25% del contenedor y resta un margen */
-        height: auto; /* Mantiene la relación de aspecto original */
-        margin: 10px;
-    }
-
-    .hobbie-texto {
-        text-align: justify;
-        width: 100%; /* Ocupa todo el ancho disponible */
-        padding-left: 1%;
-    }
+ @include imagen-freetime-properties;
 }
 
-
 @media (min-width: 600px) and (max-width: 768px) {
-  .info-basica {
-    color: $texto-blue;
-    text-align: justify;
-    width: 95%;
-    padding: 1%;
-    position: relative;
-    transform: translateY(-40%);
-
-    p::first-line {
-      font-weight: bold;
-      color: $color-min-p-firstline-response;
-    }
-  }
-
-  .foto-perfil {
-    transform: translateX(-50%);
-    transform: translateY(-70%);
-  }
-
-  .menu {
-    flex-direction: column;
-    padding-top: 2%;
-  }
+ @include properties-responsives-600-to-768;
 }
