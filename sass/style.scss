@@ -10,6 +10,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+//se asignan variables globales 
+$texto-blue: blue; 
+$black-color: black;
+$firstline-color:  rgba(14, 128, 221, 0.834);
+$background-color-piepagina:#f0f0f0;
+$color-min-p-firstline-response: cadetblue;
+
+
+
+
 .foto-perfil {
   border-radius: 50%;
   position: relative;
@@ -35,7 +45,7 @@ body {
 }
 
 a:visited {
-  color: #000;
+  color: $black-color;
 }
 
 .info-basica {
@@ -45,7 +55,7 @@ a:visited {
 
   p::first-line {
     font-weight: bold;
-    color: rgba(14, 128, 221, 0.834);
+    color: $firstline-color;
   }
 }
 
@@ -58,7 +68,7 @@ a:visited {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: $background-color-piepagina;
   padding: 1%;
 
   .info-pie-pagina {
@@ -168,7 +178,7 @@ a:visited {
 
 @media (min-width: 600px) and (max-width: 768px) {
   .info-basica {
-    color: blue;
+    color: $texto-blue;
     text-align: justify;
     width: 95%;
     padding: 1%;
@@ -177,7 +187,7 @@ a:visited {
 
     p::first-line {
       font-weight: bold;
-      color: cadetblue;
+      color: $color-min-p-firstline-response;
     }
   }
 
