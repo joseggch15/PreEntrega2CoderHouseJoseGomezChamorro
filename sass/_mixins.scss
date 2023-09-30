@@ -136,26 +136,35 @@
     size: 100%;
   }
 
-  .github-link {
+  .imagenen-logo-github {
+    text-align: center; /* Centrar horizontalmente */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    text-decoration: none;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura de la ventana visible */
+  }
+  .github-link {
+    text-align: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar verticalmente */
   }
 }
 
 @mixin imagen-freetime-properties {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  .imagenen-freetime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+  }
 
   .freetime-actividad {
     width: calc(
-      25% - 20px
+      25% - 25px
     ); /* Establece el ancho en un 25% del contenedor y resta un margen */
-    height: auto; /* Mantiene la relación de aspecto original */
+    height: 200px; /* Mantiene la relación de aspecto original */
     margin: 10px;
   }
 
@@ -166,7 +175,7 @@
   }
 }
 
-@mixin properties-responsives-600-to-768{
+@mixin properties-responsives-600-to-768 {
   .info-basica {
     color: $texto-blue;
     text-align: justify;

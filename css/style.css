@@ -132,26 +132,31 @@ a:visited {
   margin: 10px;
   size: 100%;
 }
-.imagenen-logo-github .github-link {
+.imagenen-logo-github .imagenen-logo-github {
+  text-align: center; /* Centrar horizontalmente */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-  text-decoration: none;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura de la ventana visible */
+}
+.imagenen-logo-github .github-link {
+  text-align: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar verticalmente */
 }
 
-.imagen-freetime {
+.imagenen-freetime .imagenen-freetime {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.imagen-freetime .freetime-actividad {
-  width: calc(25% - 20px); /* Establece el ancho en un 25% del contenedor y resta un margen */
-  height: auto; /* Mantiene la relación de aspecto original */
+.imagenen-freetime .freetime-actividad {
+  width: calc(25% - 25px); /* Establece el ancho en un 25% del contenedor y resta un margen */
+  height: 200px; /* Mantiene la relación de aspecto original */
   margin: 10px;
 }
-.imagen-freetime .hobbie-texto {
+.imagenen-freetime .hobbie-texto {
   text-align: justify;
   width: 100%; /* Ocupa todo el ancho disponible */
   padding-left: 1%;
