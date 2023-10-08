@@ -38,6 +38,11 @@ a:visited {
   @include titulo-mis-experiencias-profesionales-properties;
 }
 
+
+.empresas{
+ @include empresas-properties;
+}
+
 .experiencia-texto {
   @include experiencia-texto-properties;
 }

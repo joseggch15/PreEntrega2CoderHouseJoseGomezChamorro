@@ -107,12 +107,13 @@ a:visited {
 .empresas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-  width: 100%;
-  max-width: 800px;
+  column-gap: 200px;
+}
+.empresas img {
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
-  border: 2px solid #333;
-  margin: 20px;
+  border: 1px solid #ccc;
 }
 
 .experiencia-texto {
@@ -149,22 +150,32 @@ a:visited {
     size: 100%;
   }
   .imagenen-logo-github .github-link {
-    text-align: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    align-items: center;
+    /* Centrar verticalmente */
   }
 }
 .imagenen-logo-github .imagenen-logo-github {
-  text-align: center; /* Centrar horizontalmente */
+  text-align: center;
+  /* Centrar horizontalmente */
   display: flex;
-  justify-content: center; /* Centrar verticalmente */
-  align-items: center; /* Centrar verticalmente */
-  height: 100vh; /* Altura de la ventana visible */
+  justify-content: center;
+  /* Centrar verticalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+  height: 100vh;
+  /* Altura de la ventana visible */
 }
 .imagenen-logo-github .github-link {
-  text-align: center; /* Centrar horizontalmente */
-  justify-content: center; /* Centrar verticalmente */
-  align-items: center; /* Centrar verticalmente */
+  text-align: center;
+  /* Centrar horizontalmente */
+  justify-content: center;
+  /* Centrar verticalmente */
+  align-items: center;
+  /* Centrar verticalmente */
 }
 
 .imagenen-freetime .imagenen-freetime {
@@ -174,8 +185,10 @@ a:visited {
   flex-wrap: wrap;
 }
 .imagenen-freetime .freetime-actividad {
-  width: 23%; /* Establece el ancho en un 25% del contenedor y resta un margen */
-  height: 200px; /* Mantiene la relación de aspecto original */
+  width: calc( 24% - 1% );
+  /* Establece el ancho en un 25% del contenedor y resta un margen */
+  height: 200px;
+  /* Mantiene la relación de aspecto original */
   margin: 10px;
 }
 @media (min-width: 500px) and (max-width: 778px) {
@@ -185,14 +198,17 @@ a:visited {
     align-items: center;
   }
   .imagenen-freetime .freetime-actividad {
-    width: 23%; /* Establece el ancho en un 25% del contenedor y resta un margen */
-    height: 80%; /* Mantiene la relación de aspecto original */
+    width: calc( 24% - 1% );
+    /* Establece el ancho en un 25% del contenedor y resta un margen */
+    height: 80%;
+    /* Mantiene la relación de aspecto original */
     margin: 10px;
   }
 }
 .imagenen-freetime .hobbie-texto {
   text-align: justify;
-  width: 100%; /* Ocupa todo el ancho disponible */
+  width: 100%;
+  /* Ocupa todo el ancho disponible */
   height: auto;
   padding-left: 1%;
 }
@@ -210,14 +226,14 @@ a:visited {
     font-weight: bold;
     color: cadetblue;
   }
+
   .foto-perfil {
     transform: translateX(-50%);
     transform: translateY(-70%);
   }
+
   .menu {
     flex-direction: column;
     padding-top: 2%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

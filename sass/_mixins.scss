@@ -102,6 +102,17 @@
   }
 }
 
+@mixin empresas-properties{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px; // Espacio entre las imágenes
+  width: 100%; // Establece el ancho al 100% del contenedor
+  max-width: 800px; // Establece un ancho máximo para la imagen
+  height: auto; // Mantiene la proporción original de la imagen
+  border: 2px solid #333; // Añade un borde a la imagen
+  margin: 20px; // Agrega márgenes alrededor de la imagen
+}
+
 @mixin titulo-mis-experiencias-profesionales-properties {
   position: relative;
   transform: translateX(40%);
@@ -111,6 +122,7 @@
   text-align: justify;
   width: 95%;
   padding-left: 1%;
+
 }
 
 @mixin Mis-Titulos-Obtenidos-properties {
