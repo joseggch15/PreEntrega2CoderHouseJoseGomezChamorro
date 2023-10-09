@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "variables"; // Importa el archivo variables.scss
 @import "mixins"; // Importa el archivo mixins.scss
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
   @include body-style; // se importa desde la estructura desde mixins
