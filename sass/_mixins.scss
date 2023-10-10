@@ -81,9 +81,9 @@
   flex-wrap: wrap;
 
   .empresas {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 1rem;
   }
 }
 
@@ -113,9 +113,13 @@
   margin: 20px; // Agrega márgenes alrededor de la imagen
 }
 
+@mixin navbar-empresas-properties{
+  padding-top: 9%;
+}
+
 @mixin titulo-mis-experiencias-profesionales-properties {
   position: relative;
-  transform: translateX(40%);
+  transform: translateX(30%);
 }
 
 @mixin experiencia-texto-properties {
@@ -134,6 +138,11 @@
   position: relative;
   transform: translateX(45%);
 }
+
+@mixin card-properties{
+  background-color: transparent;
+}
+
 
 @mixin imagenen-logo-github-properties {
   display: flex;

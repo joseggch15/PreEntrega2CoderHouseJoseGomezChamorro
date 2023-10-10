@@ -35,6 +35,11 @@ a:visited {
   @include imagenen-logo-estudios-properties;
 }
 
+
+.card{
+  @include card-properties; 
+}
+
 .titulo-mis-experiencias-profesionales {
   @include titulo-mis-experiencias-profesionales-properties;
 }
@@ -44,9 +49,15 @@ a:visited {
  @include empresas-properties;
 }
 
+.navebar-paginacion{
+  @include navbar-empresas-properties
+}
+
 .experiencia-texto {
   @include experiencia-texto-properties;
 }
+
+
 
 .Mis-Titulos-Obtenidos {
   @include Mis-Titulos-Obtenidos-properties;
@@ -67,3 +78,4 @@ a:visited {
 @media (min-width: 600px) and (max-width: 768px) {
  @include properties-responsives-600-to-768;
 }
+

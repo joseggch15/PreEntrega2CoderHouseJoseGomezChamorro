@@ -13093,9 +13093,9 @@ a:visited {
   flex-wrap: wrap;
 }
 .imagenen-logo-corporativo .empresas {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  width: 18.75rem;
+  height: 18.75rem;
+  margin: 1rem;
 }
 
 .imagenen-logo-estudios {
@@ -13115,9 +13115,13 @@ a:visited {
   }
 }
 
+.card {
+  background-color: transparent;
+}
+
 .titulo-mis-experiencias-profesionales {
   position: relative;
-  transform: translateX(40%);
+  transform: translateX(30%);
 }
 
 .empresas {
@@ -13129,6 +13133,10 @@ a:visited {
   height: auto;
   border: 2px solid #333;
   margin: 20px;
+}
+
+.navebar-paginacion {
+  padding-top: 5%;
 }
 
 .experiencia-texto {
