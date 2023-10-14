@@ -46,6 +46,10 @@
     font-weight: bold;
     color: $firstline-color;
   }
+
+  @media (min-width: 375px) and (max-width: 778px) {
+    padding-bottom: 3rem;
+  }
 }
 
 @mixin pie-pagina-properties {
@@ -73,10 +77,8 @@
     }
   }
 
- 
   /* Estilos para teléfonos */
-@media (min-width: 375px) and (max-width: 778px) {
-  .pie-pagina-properties {
+  @media (min-width: 375px) and (max-width: 778px) {
     justify-content: space-around;
     align-content: center;
     list-style: none;
@@ -86,6 +88,8 @@
     width: 100%;
     background-color: $background-color-piepagina;
     padding: 1%;
+    height: 2rem;
+    overflow-x: hidden;
   }
 
   .info-pie-pagina {
@@ -93,20 +97,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50%;
     text-decoration: none;
     text-align: initial;
     margin-left: 1%;
-    margin-top: 10px;
-    font-size: 0.625rem; /* Ajusta el tamaño de fuente según tus necesidades */
 
+    margin-top: 0.1rem;
+    font-size: 0.625rem; /* Ajusta el tamaño de fuente según tus necesidades */
     a {
       text-decoration: none;
       color: inherit;
     }
   }
-}
-
 }
 
 @mixin imagenen-logo-corporativo-properties {
@@ -136,14 +137,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width: 375px) and (max-width: 778px){
+  @media (min-width: 375px) and (max-width: 778px) {
     display: flex;
     flex-direction: column;
     font-size: 0.625rem; /* Ajusta el tamaño de fuente según tus necesidades */
     align-items: center;
     row-gap: 2rem;
   }
-
 }
 
 @mixin empresas-properties {
@@ -164,7 +164,6 @@
 @mixin titulo-mis-experiencias-profesionales-properties {
   position: relative;
   transform: translateX(30%);
- 
 }
 
 @mixin experiencia-texto-properties {
@@ -176,7 +175,6 @@
 @mixin Mis-Titulos-Obtenidos-properties {
   position: relative;
   transform: translateX(40%);
-
 }
 
 @mixin Titulo-Evidencias-properties {
@@ -222,8 +220,6 @@
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar verticalmente */
   }
-
- 
 }
 
 @mixin imagen-freetime-properties {
