@@ -135,6 +135,15 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (min-width: 375px) and (max-width: 778px){
+    display: flex;
+    flex-direction: column;
+    font-size: 0.625rem; /* Ajusta el tamaño de fuente según tus necesidades */
+    align-items: center;
+    row-gap: 2rem;
+  }
+
 }
 
 @mixin empresas-properties {
@@ -155,6 +164,7 @@
 @mixin titulo-mis-experiencias-profesionales-properties {
   position: relative;
   transform: translateX(30%);
+ 
 }
 
 @mixin experiencia-texto-properties {
@@ -166,6 +176,7 @@
 @mixin Mis-Titulos-Obtenidos-properties {
   position: relative;
   transform: translateX(40%);
+
 }
 
 @mixin Titulo-Evidencias-properties {
