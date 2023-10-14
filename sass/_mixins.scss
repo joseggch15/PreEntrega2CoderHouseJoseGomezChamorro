@@ -72,6 +72,41 @@
       color: none;
     }
   }
+
+ 
+  /* Estilos para teléfonos */
+@media (min-width: 375px) and (max-width: 778px) {
+  .pie-pagina-properties {
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-color-piepagina;
+    padding: 1%;
+  }
+
+  .info-pie-pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    text-decoration: none;
+    text-align: initial;
+    margin-left: 1%;
+    margin-top: 10px;
+    font-size: 0.625rem; /* Ajusta el tamaño de fuente según tus necesidades */
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
 }
 
 @mixin imagenen-logo-corporativo-properties {
@@ -102,7 +137,7 @@
   }
 }
 
-@mixin empresas-properties{
+@mixin empresas-properties {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 100px; // Espacio entre las imágenes
@@ -113,7 +148,7 @@
   margin: 20px; // Agrega márgenes alrededor de la imagen
 }
 
-@mixin navbar-empresas-properties{
+@mixin navbar-empresas-properties {
   padding-top: 9%;
 }
 
@@ -126,7 +161,6 @@
   text-align: justify;
   width: 95%;
   padding-left: 1%;
-
 }
 
 @mixin Mis-Titulos-Obtenidos-properties {
@@ -139,10 +173,9 @@
   transform: translateX(45%);
 }
 
-@mixin card-properties{
+@mixin card-properties {
   background-color: transparent;
 }
-
 
 @mixin imagenen-logo-github-properties {
   display: flex;
@@ -150,9 +183,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  
-
-  @media (min-width: 500px) and (max-width: 778px) {
+  @media (min-width: 375px) and (max-width: 778px) {
     display: flex;
     flex-direction: column;
     .github {
@@ -162,15 +193,11 @@
       size: 100%;
     }
     .github-link {
-
       text-align: center; /* Centrar horizontalmente */
       justify-content: center; /* Centrar verticalmente */
       align-items: center; /* Centrar verticalmente */
     }
   }
-
-
-
 
   .imagenen-logo-github {
     text-align: center; /* Centrar horizontalmente */
@@ -184,15 +211,16 @@
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar verticalmente */
   }
+
+ 
 }
 
 @mixin imagen-freetime-properties {
-  .imagenen-freetime{
+  .imagenen-freetime {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
   }
 
   .freetime-actividad {
@@ -216,8 +244,6 @@
     }
   }
 
-
-
   .hobbie-texto {
     text-align: justify;
     width: 100%; /* Ocupa todo el ancho disponible */
@@ -225,8 +251,6 @@
     padding-left: 1%;
   }
 }
-
-
 
 @mixin properties-responsives-600-to-768 {
   .info-basica {
