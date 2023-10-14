@@ -21,32 +21,83 @@
       content="Experiencias laborales en BIOFILM, Experiencia Laboral Taghleef"
     />
     <link rel="stylesheet" href="../css/style.css" />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
-  <body style="overflow-x: hidden;">
-    <header>
-      <header>
-        <ul class="menu">
-          <li class="menu-opcion"><a href="../index.html">Mi Perfil</a></li>
-          <li class="menu-opcion">
-            <a href="./Experiencia.html">Experiencias</a>
-          </li>
-          <li class="menu-opcion"><a href="./Diplomas.html">Diplomas</a></li>
-          <li class="menu-opcion">
-            <a href="./Evidencias.html">Evidencias</a>
-          </li>
-          <li class="menu-opcion"><a href="./Hobbies.html">Hobbies</a></li>
-        </ul>
-      </header>
-    </header>
+  <body style="overflow-x: hidden">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">JosePortafolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Mi Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/Experiencia.html"
+                >Experiencias</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/Diplomas.html">Diplomas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/Evidencias.html">Evidencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/Hobbies.html">Hobbies</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <h1 class="titulo-mis-experiencias-profesionales">
       Mis Experiencias Profesionales !!!
     </h1>
-
-
-
 
     <div class="imagenen-logo-corporativo">
       <img
@@ -75,20 +126,34 @@
       </p>
     </main>
 
-
     <!-- se agrega mavegador en el footer este debe ser  configurado los style por sass -->
-    <footer style="align-items: center; align-content: center; text-align: center; margin-right: 40%;">
+    <footer
+      style="
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-right: 40%;
+      "
+    >
       <nav class="container mt-3">
         <ul class="pagination pagination-lg justify-content-end">
-          <li class="page-item"><a class="page-link" href="./Experiencia.html">Inicio</a></li>
-          <li class="page-item"><a class="page-link" href="./ExperienciaBiofilm.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="./ExperienciaStip.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="./ExperienciaTaghleef.html">3</a></li>
-          <li class="page-item"><a class="page-link" href="./ExperienciaCotecmar.html">Fin</a></li>
+          <li class="page-item">
+            <a class="page-link" href="./Experiencia.html">Inicio</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./ExperienciaBiofilm.html">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./ExperienciaStip.html">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./ExperienciaTaghleef.html">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./ExperienciaCotecmar.html">Fin</a>
+          </li>
         </ul>
       </nav>
     </footer>
-
-    
   </body>
 </html>
